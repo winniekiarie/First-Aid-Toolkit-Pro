@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First Aid Toolkit Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚑 First Aid Toolkit</h1>
+
+<input type="text" id="search" placeholder="Search first aid..." onkeyup="searchAid()">
+
+<div class="buttons" id="buttons">
+  <button onclick="showAid('burn')">Burns</button>
+  <button onclick="showAid('cut')">Cuts</button>
+  <button onclick="showAid('choking')">Choking</button>
+  <button onclick="showAid('fracture')">Fracture</button>
+  <button onclick="showAid('bleeding')">Bleeding</button>
+</div>
+
+<div class="card">
+  <p id="output">Click a topic to see instructions</p>
+  <button onclick="speakText()">🔊 Read Aloud</button>
+</div>
+
+<button class="emergency" onclick="callEmergency()">🚨 Emergency Call</button>
+
+<script src="script.js"></script>
+</body>
+</html>
